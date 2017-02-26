@@ -1,4 +1,4 @@
-package BreadthFirstSearch;
+package GraphSearch;
 
 import edu.princeton.cs.algs4.Graph;
 import org.junit.Assert;

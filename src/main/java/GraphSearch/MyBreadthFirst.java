@@ -1,6 +1,5 @@
-package BreadthFirstSearch;
+package GraphSearch;
 
-import com.sun.javafx.image.IntPixelGetter;
 import edu.princeton.cs.algs4.Graph;
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.Stack;

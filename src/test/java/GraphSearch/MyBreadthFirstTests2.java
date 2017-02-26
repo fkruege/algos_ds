@@ -1,4 +1,4 @@
-package BreadthFirstSearch;
+package GraphSearch;
 
 import edu.princeton.cs.algs4.BreadthFirstPaths;
 import edu.princeton.cs.algs4.Graph;
@@ -35,7 +35,7 @@ public class MyBreadthFirstTests2 {
     @Test
     public void test2() {
 
-        String inputGraphFileName = "src/test/resources/largeG.txt";
+        String inputGraphFileName = "src/test/resources/mediumG.txt";
         In in = new In(inputGraphFileName);
         Graph G = new Graph(in);
 //        testGraph(inputGraphFileName, 0);
