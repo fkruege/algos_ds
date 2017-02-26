@@ -38,7 +38,6 @@ public class MyBreadthFirstTests2 {
         String inputGraphFileName = "src/test/resources/mediumG.txt";
         In in = new In(inputGraphFileName);
         Graph G = new Graph(in);
-//        testGraph(inputGraphFileName, 0);
         for(int i = 0; i < 6; i++){
             testGraph(G, i);
         }
