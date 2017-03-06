@@ -21,4 +21,15 @@ public class HeapSortTests {
         sortTest.runTestSuite();
     }
 
+    @Test
+    public void randomTest(){
+        int a = 99;
+        float b = (float) 234.0123;
+
+        a = (int) b;
+
+       System.out.println(a);
+
+    }
+
 }
