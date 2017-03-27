@@ -9,7 +9,7 @@ public class FindUniqueNTimeTests {
 
     @Test
     public void test_find(){
-        FindUniqueNTime findUniqueChar = new FindUniqueNTime();
+        FindUniqueUsingQueue findUniqueChar = new FindUniqueUsingQueue();
         UniqueCharTester tester = new UniqueCharTester();
         tester.test(findUniqueChar);
     }

@@ -7,7 +7,7 @@ import java.util.Queue;
 /**
  * Created by fkruege on 2/17/2017.
  */
-public class FindUniqueNTime implements IFindFirstUniqueChar {
+public class FindUniqueUsingQueue implements IFindFirstUniqueChar {
 
     public char find(String input) {
         HashMap<Character, Integer> charCount = new HashMap<Character, Integer>();

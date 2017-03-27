@@ -35,8 +35,6 @@ public class HashTableUniqueChar implements IFindFirstUniqueChar{
 
         return Character.MIN_VALUE;
 
-
-
     }
 
 
