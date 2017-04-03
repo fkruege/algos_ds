@@ -2,6 +2,8 @@ package ctci.Chapter2;
 
 import org.junit.Test;
 
+import java.util.HashSet;
+
 import static org.junit.Assert.*;
 
 /**
@@ -12,6 +14,7 @@ public class RemoveDups2_1Test {
 
     @Test
     public void removeDuplicates() throws Exception {
+
 
         Node n1 = new Node(1);
         Node n2a = new Node(2);
