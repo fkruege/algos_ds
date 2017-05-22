@@ -1,5 +1,6 @@
 package GraphSearch;
 
+import Graphs.practice.BFSPractice1;
 import edu.princeton.cs.algs4.BreadthFirstPaths;
 import edu.princeton.cs.algs4.Graph;
 import edu.princeton.cs.algs4.In;
@@ -49,7 +50,9 @@ public class MyBreadthFirstTests2 {
 
         int s = sourceVertex;
         BreadthFirstPaths bfs = new BreadthFirstPaths(G, s);
-        MyBreadthFirst myBfs = new MyBreadthFirst(G, s);
+//        MyBreadthFirst myBfs = new MyBreadthFirst(G, s);
+        BFSPractice1 myBfs = new BFSPractice1(G, s);
+
         myBfs.breadthFirstSearch();
 
         for (int v = 0; v < G.V(); v++) {

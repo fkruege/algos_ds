@@ -1,5 +1,6 @@
 package GraphSearch;
 
+import Graphs.MyTopologicalSort;
 import edu.princeton.cs.algs4.Digraph;
 import org.junit.Assert;
 import org.junit.Test;

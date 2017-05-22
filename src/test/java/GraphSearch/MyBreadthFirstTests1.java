@@ -1,5 +1,6 @@
 package GraphSearch;
 
+import Graphs.practice.BFSPractice1;
 import edu.princeton.cs.algs4.Graph;
 import org.junit.Assert;
 import org.junit.Before;
@@ -23,7 +24,8 @@ public class MyBreadthFirstTests1 {
         graph.addEdge(0, 2);
         graph.addEdge(1, 3);
 
-        MyBreadthFirst breadthFirst = new MyBreadthFirst(graph, 0);
+//        MyBreadthFirst breadthFirst = new MyBreadthFirst(graph, 0);
+        BFSPractice1 breadthFirst = new BFSPractice1(graph, 0);
         breadthFirst.breadthFirstSearch();
 
         Assert.assertTrue(breadthFirst.hasPathTo(0));

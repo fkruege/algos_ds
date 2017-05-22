@@ -1,9 +1,7 @@
 package GraphSearch;
 
-import edu.princeton.cs.algs4.DepthFirstSearch;
+import Graphs.MyDepthFirstSearch;
 import edu.princeton.cs.algs4.Graph;
-import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdOut;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

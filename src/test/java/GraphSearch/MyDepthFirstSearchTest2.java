@@ -1,5 +1,6 @@
 package GraphSearch;
 
+import Graphs.MyDepthFirstSearch;
 import edu.princeton.cs.algs4.DepthFirstSearch;
 import edu.princeton.cs.algs4.Graph;
 import edu.princeton.cs.algs4.In;

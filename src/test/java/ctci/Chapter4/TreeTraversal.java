@@ -50,12 +50,30 @@ public class TreeTraversal {
 
 
     public void postorderTraversal(MyBST<Integer, Integer> bst){
-
         MyBST<Integer, Integer>.Node root = bst.getRoot();
         StdOut.println();
         postOrder(root);
         StdOut.println();
+    }
 
+
+    public void postorderTraversal(BST.MyBST<Integer, Integer> bst){
+        BST.MyBST.Node<Integer, Integer> root = bst.getRoot();
+        StdOut.println();
+        postOrder(root);
+        StdOut.println();
+    }
+
+
+
+    private void postOrder(BST.MyBST.Node<Integer, Integer> node){
+        if(node == null){
+            return;
+        }
+
+        postOrder(node.left);
+        postOrder(node.right);
+        StdOut.print(node.value + ", ");
     }
 
     private void postOrder(MyBST.Node node){

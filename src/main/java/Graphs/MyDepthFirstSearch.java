@@ -1,4 +1,4 @@
-package GraphSearch;
+package Graphs;
 
 import edu.princeton.cs.algs4.Graph;
 import sun.util.resources.cldr.se.CurrencyNames_se;

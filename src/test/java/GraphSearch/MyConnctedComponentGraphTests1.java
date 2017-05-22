@@ -1,5 +1,6 @@
 package GraphSearch;
 
+import Graphs.MyConnectedComponentGraph;
 import edu.princeton.cs.algs4.*;
 import org.junit.Assert;
 import org.junit.Test;
