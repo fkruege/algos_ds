@@ -38,6 +38,7 @@ public class PowerSet {
             subsets.add(copy);
         }
 
+        // now find other combinations
         if(desiredLength > 1){
             subsets(set, new ArrayList<>(), subsets, desiredLength, index + 1);
         }

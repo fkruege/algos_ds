@@ -1,5 +1,7 @@
 package ctci.Chapter5;
 
+import java.util.HashMap;
+
 public class ArithmeticLogicShift {
 
     public int repeatedArithmeticShift(int x, int count) {

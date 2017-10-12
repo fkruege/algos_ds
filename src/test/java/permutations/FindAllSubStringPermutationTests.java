@@ -2,6 +2,7 @@ package permutations;
 
 import org.junit.Assert;
 import org.junit.Test;
+import permutations.Practice.PermPractice1;
 
 import java.util.List;
 
@@ -11,11 +12,16 @@ import java.util.List;
 public class FindAllSubStringPermutationTests {
 
     @Test
-    public void test_1(){
-        FindAllSubStringsPermutations permutations =new FindAllSubStringsPermutations();
-        List<String> results= permutations.findAllSubStringPermutations("abc");
+    public void test_1() {
+        PermPractice1 permutations = new PermPractice1();
+        List<String> results = permutations.findAllSubStringPermutations("abc");
+        verify(results);
+    }
 
-        Assert.assertEquals(15, results.size());
+    private void verify(List<String> results) {
+
+        Assert.assertEquals(16, results.size());
+        Assert.assertTrue(results.contains(""));
         Assert.assertTrue(results.contains("a"));
         Assert.assertTrue(results.contains("b"));
         Assert.assertTrue(results.contains("c"));

@@ -59,7 +59,7 @@ public class RobotGridTest {
        assertNotNull(points);
 //
 //       ArrayList<Point> pathA = QuestionA.getPath(maze);
-//       ArrayList<Point> pathB = QuestionB.getPath(maze);
+//       ArrayList<Point> pathB = CoinsReference.getPath(maze);
 //       if (pathA != null) {
 //           System.out.println(pathA.toString());
 //       } else {

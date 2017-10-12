@@ -1,30 +1,50 @@
 package ctci.Chapter8.Question1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
- * Created by fkruege on 5/17/17.
+ * Created by fkruege on 6/4/17.
  */
 public class StepCounter {
 
-    public List<List<Integer>> countHopCombinations(int numberSteps) {
-        List<List<Integer>> hopCombinations = new ArrayList<>();
-        hop(numberSteps, new ArrayList<>(), hopCombinations);
-        return hopCombinations;
+    private int numberSteps;
+    private int[] memo;
+    private int[] validSteps;
+
+    public int getNumberWays(int numberSteps, int[] validSteps) {
+
+        this.numberSteps = numberSteps;
+        this.validSteps = validSteps;
+        this.memo = new int[numberSteps + 1];
+
+        int numberWays = ways(0);
+        return numberWays;
     }
 
-    private void hop(int numberSteps, List<Integer> currentStepSequence, List<List<Integer>> hopCombinations) {
+    private int ways(int currentStep) {
 
-        for (int i = 1; i <= 3 && i <= numberSteps; i++) {
-            List<Integer> newSequence = new ArrayList<>(currentStepSequence);
-            newSequence.add(i);
-            hop(numberSteps - i, newSequence, hopCombinations);
+        if(memo[currentStep] > 0){
+            return memo[currentStep];
         }
 
-        if (numberSteps == 0) {
-            hopCombinations.add(currentStepSequence);
+        if (currentStep == numberSteps) {
+            return 1;
         }
 
+        int numberWays = 0;
+
+        for (int i = 0; i < validSteps.length; i++) {
+            int stepAmt = validSteps[i];
+            int saveStep = currentStep + stepAmt;
+            if (saveStep > numberSteps) {
+                break;
+            }
+
+            numberWays += ways(saveStep);
+        }
+
+        memo[currentStep] = numberWays;
+
+        return numberWays;
     }
+
+
 }
